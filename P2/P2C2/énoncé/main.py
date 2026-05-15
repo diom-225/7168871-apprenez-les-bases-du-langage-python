@@ -3,15 +3,9 @@ nombres = "1,2,3,4"
 liste = nombres.split(",")
 # Convertir les éléments en nonbre
 datas = []
-for i in liste:
-    if i == '1':
-       datas.append(1)
-    elif i == '2':
-       datas.append(2)
-    elif i == '3':
-      datas.append(3)
-    elif i == '4':
-      datas.append(4)
+for nombre in liste:
+   nombre_int = int(nombre)
+   datas.append(nombre_int)
 print(datas)
 # Calculons la somme des nombres
 sommes = sum(datas)
